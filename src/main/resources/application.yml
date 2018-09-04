@@ -1,0 +1,68 @@
+#配置内置Tomcat的端口号等信息
+server:
+  port: 28080
+  tomcat:
+    uri-encoding: utf-8
+
+spring:
+  servlet:
+    multipart:
+      location: d:/img/
+      enabled: true
+      resolve-lazily: false
+      max-file-size: 10MB
+  #配置模板页面不缓存
+  thymeleaf:
+    cache: false
+
+#配置数据源，包括数据库连接信息，使用的是阿里的druid连接池
+  datasource:
+      name: test
+      url: jdbc:oracle:thin:@localhost:1521:xe
+      username: scoreinfo
+      password: 123456
+      # 使用druid数据源
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: oracle.jdbc.OracleDriver
+
+  #配置redis连接信息
+  redis:
+   database: 0
+   host: localhost
+   port: 6379
+   password: 123456
+   jedis:
+    pool:
+      max-active: 8
+      min-idle: 0
+      max-wait: -1ms
+
+## 该配置节点为独立的节点，有很多同学容易将这个配置放在spring的节点下，导致配置无法被识别
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml  #注意：xml文件必须放在resource里，且一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.sc.pojo  # 注意：对应实体类的路径
+  config-location: classpath:mybatis/mybatis.xml
+
+#pagehelper分页插件
+pagehelper:
+  helperDialect: oracle
+  reasonable: true
+
+#配置springboot默认支持的logback日志系统
+logging:
+  config: classpath:logback-boot.xml
+
+#自定义信息
+welcome:
+    #值前面一定要加空格
+  message: Hello, Spring Boot
+
+#redis key失效时间
+redis:
+  expire:
+    seconds: 10
+
+upload:
+  course:
+    location: D:/upload/
+

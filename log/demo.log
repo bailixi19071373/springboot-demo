@@ -1,0 +1,347 @@
+2018-08-26 00:14:00,986 INFO (DirectJDKLog.java:180)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-26 00:14:00,991 INFO (FrameworkServlet.java:494)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-26 00:14:01,000 INFO (FrameworkServlet.java:509)- FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2018-08-26 00:14:01,003 INFO (StudentController.java:30)- --------------查询学生信息-----------
+2018-08-26 00:14:01,003 INFO (StudentController.java:30)- --------------查询学生信息-----------
+2018-08-26 00:14:01,109 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select s.id as stuid, s.name as stuname, s.sex as stusex, s.hobby as hobby, s.birthday as stubirth, s.stuno as stuno, s.country as stucountry, c.id as cid, c.cno as cno, c.cname as cname, c.points as points, sc.id scid, sc.score score from student s left join score sc on s.id = sc.sid left join course c on sc.cid = c.id 
+2018-08-26 00:14:01,109 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select s.id as stuid, s.name as stuname, s.sex as stusex, s.hobby as hobby, s.birthday as stubirth, s.stuno as stuno, s.country as stucountry, c.id as cid, c.cno as cno, c.cname as cname, c.points as points, sc.id scid, sc.score score from student s left join score sc on s.id = sc.sid left join course c on sc.cid = c.id 
+2018-08-26 00:14:01,110 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:14:01,110 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:14:01,128 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2018-08-26 00:14:01,128 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2018-08-26 00:15:41,889 INFO (StartupInfoLogger.java:50)- Starting SpringbootApplication on bailixi-PC-1 with PID 8876 (D:\liangzhixing\tool\ideaprojects\springboot\target\classes started by 晨 in D:\liangzhixing\tool\ideaprojects\springboot)
+2018-08-26 00:15:41,889 INFO (StartupInfoLogger.java:50)- Starting SpringbootApplication on bailixi-PC-1 with PID 8876 (D:\liangzhixing\tool\ideaprojects\springboot\target\classes started by 晨 in D:\liangzhixing\tool\ideaprojects\springboot)
+2018-08-26 00:15:41,891 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-08-26 00:15:41,891 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-08-26 00:15:41,895 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-08-26 00:15:41,895 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-08-26 00:15:42,026 INFO (AbstractApplicationContext.java:590)- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1b2cc3b: startup date [Sun Aug 26 00:15:42 CST 2018]; root of context hierarchy
+2018-08-26 00:15:43,831 INFO (RepositoryConfigurationDelegate.java:163)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-08-26 00:15:44,462 INFO (AutowiredAnnotationBeanPostProcessor.java:153)- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-08-26 00:15:44,651 INFO (PostProcessorRegistrationDelegate.java:326)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$401d9778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-26 00:15:45,652 INFO (TomcatWebServer.java:91)- Tomcat initialized with port(s): 28080 (http)
+2018-08-26 00:15:45,675 INFO (DirectJDKLog.java:180)- Initializing ProtocolHandler ["http-nio-28080"]
+2018-08-26 00:15:45,696 INFO (DirectJDKLog.java:180)- Starting service [Tomcat]
+2018-08-26 00:15:45,697 INFO (DirectJDKLog.java:180)- Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-26 00:15:45,704 INFO (DirectJDKLog.java:180)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Java\jdk1.8.0_25\bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Lenovo\Lenovo Home\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\Redis\;D:\tool\apache-maven-3.3.9\bin;C:\Ruby25-x64\bin;C:\Users\晨\AppData\Local\Microsoft\WindowsApps;C:\Users\晨\AppData\Roaming\npm;C:\Program Files\nodejs;.]
+2018-08-26 00:15:45,916 INFO (DirectJDKLog.java:180)- Initializing Spring embedded WebApplicationContext
+2018-08-26 00:15:45,917 INFO (ServletWebServerApplicationContext.java:285)- Root WebApplicationContext: initialization completed in 3891 ms
+2018-08-26 00:15:46,140 INFO (ServletRegistrationBean.java:187)- Servlet dispatcherServlet mapped to [/]
+2018-08-26 00:15:46,143 INFO (ServletRegistrationBean.java:187)- Servlet statViewServlet mapped to [/druid/*]
+2018-08-26 00:15:46,148 INFO (AbstractFilterRegistrationBean.java:245)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-26 00:15:46,149 INFO (AbstractFilterRegistrationBean.java:245)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-26 00:15:46,150 INFO (AbstractFilterRegistrationBean.java:245)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-26 00:15:46,150 INFO (AbstractFilterRegistrationBean.java:245)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-26 00:15:46,150 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'webStatFilter' to urls: [/*]
+2018-08-26 00:15:46,314 INFO (DruidDataSourceAutoConfigure.java:56)- Init DruidDataSource
+2018-08-26 00:15:46,752 INFO (DruidDataSource.java:930)- {dataSource-1} inited
+2018-08-26 00:15:47,988 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-26 00:15:48,505 INFO (RequestMappingHandlerAdapter.java:574)- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1b2cc3b: startup date [Sun Aug 26 00:15:42 CST 2018]; root of context hierarchy
+2018-08-26 00:15:48,610 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/add]}" onto public com.sc.common.JSONResult com.sc.controller.CourseController.add(javax.servlet.http.Part,com.sc.pojo.Course,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-08-26 00:15:48,612 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/query]}" onto public com.sc.json.CourseDataTableJSON com.sc.controller.CourseController.query(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-08-26 00:15:48,613 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/mod]}" onto public com.sc.common.JSONResult com.sc.controller.CourseController.mod(javax.servlet.http.Part,com.sc.pojo.Course,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-08-26 00:15:48,613 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/detail]}" onto public com.sc.pojo.Course com.sc.controller.CourseController.detail(java.lang.Integer)
+2018-08-26 00:15:48,614 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/del]}" onto public com.sc.common.JSONResult com.sc.controller.CourseController.del(java.lang.Integer[],org.springframework.ui.Model)
+2018-08-26 00:15:48,615 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/toquery]}" onto public java.lang.String com.sc.controller.CourseController.toquery()
+2018-08-26 00:15:48,615 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/checkcno],methods=[POST || GET]}" onto public com.sc.common.JSONResult com.sc.controller.CourseController.checkcno(com.sc.pojo.Course)
+2018-08-26 00:15:48,617 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/]}" onto public java.lang.String com.sc.controller.HomeController.index(org.springframework.ui.Model)
+2018-08-26 00:15:48,618 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/wel]}" onto public java.lang.String com.sc.controller.HomeController.home(org.springframework.ui.Model)
+2018-08-26 00:15:48,624 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/add]}" onto public java.lang.String com.sc.controller.StudentController.add(com.sc.pojo.Student,org.springframework.ui.Model)
+2018-08-26 00:15:48,625 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/query]}" onto public java.lang.String com.sc.controller.StudentController.query(com.sc.pojo.Student,org.springframework.ui.Model)
+2018-08-26 00:15:48,626 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/mod]}" onto public java.lang.String com.sc.controller.StudentController.mod(com.sc.pojo.Student,org.springframework.ui.Model)
+2018-08-26 00:15:48,626 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/detail]}" onto public java.lang.String com.sc.controller.StudentController.detail(java.lang.Integer,org.springframework.ui.Model)
+2018-08-26 00:15:48,627 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/del]}" onto public java.lang.String com.sc.controller.StudentController.del(java.lang.Integer[],org.springframework.ui.Model)
+2018-08-26 00:15:48,627 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/checkstuno],methods=[POST || GET]}" onto public com.sc.common.JSONResult com.sc.controller.StudentController.checkstuno(java.lang.String)
+2018-08-26 00:15:48,628 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/preadd]}" onto public java.lang.String com.sc.controller.StudentController.preadd()
+2018-08-26 00:15:48,628 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/premod]}" onto public java.lang.String com.sc.controller.StudentController.premod(java.lang.Integer,org.springframework.ui.Model)
+2018-08-26 00:15:48,629 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/user/login]}" onto public java.lang.String com.sc.controller.UserController.login(com.sc.pojo.User,org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2018-08-26 00:15:48,630 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/www]}" onto public java.lang.String com.sc.controller.WelcomeController.welcome(java.util.Map<java.lang.String, java.lang.Object>)
+2018-08-26 00:15:48,634 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-26 00:15:48,635 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-26 00:15:48,693 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-26 00:15:48,693 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-26 00:15:49,884 INFO (OptionalLiveReloadServer.java:57)- LiveReload server is running on port 35729
+2018-08-26 00:15:49,957 INFO (MBeanExporter.java:433)- Registering beans for JMX exposure on startup
+2018-08-26 00:15:49,959 INFO (MBeanExporter.java:895)- Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-08-26 00:15:49,959 INFO (MBeanExporter.java:895)- Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-26 00:15:49,969 INFO (MBeanExporter.java:668)- Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-08-26 00:15:49,971 INFO (MBeanExporter.java:668)- Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-08-26 00:15:49,989 INFO (DirectJDKLog.java:180)- Starting ProtocolHandler ["http-nio-28080"]
+2018-08-26 00:15:50,012 INFO (DirectJDKLog.java:180)- Using a shared selector for servlet write/read
+2018-08-26 00:15:50,039 INFO (TomcatWebServer.java:206)- Tomcat started on port(s): 28080 (http) with context path ''
+2018-08-26 00:15:50,046 INFO (StartupInfoLogger.java:59)- Started SpringbootApplication in 9.256 seconds (JVM running for 10.896)
+2018-08-26 00:15:50,046 INFO (StartupInfoLogger.java:59)- Started SpringbootApplication in 9.256 seconds (JVM running for 10.896)
+2018-08-26 00:16:19,914 INFO (DirectJDKLog.java:180)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-26 00:16:19,914 INFO (FrameworkServlet.java:494)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-26 00:16:19,952 INFO (FrameworkServlet.java:509)- FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2018-08-26 00:16:20,013 INFO (StudentController.java:30)- --------------查询学生信息-----------
+2018-08-26 00:16:20,013 INFO (StudentController.java:30)- --------------查询学生信息-----------
+2018-08-26 00:16:20,395 INFO (Slf4JLogger.java:101)- Starting without optional epoll library
+2018-08-26 00:16:20,398 INFO (Slf4JLogger.java:101)- Starting without optional kqueue library
+2018-08-26 00:16:21,391 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select s.id as stuid, s.name as stuname, s.sex as stusex, s.hobby as hobby, s.birthday as stubirth, s.stuno as stuno, s.country as stucountry, c.id as cid, c.cno as cno, c.cname as cname, c.points as points, sc.id scid, sc.score score from student s left join score sc on s.id = sc.sid left join course c on sc.cid = c.id 
+2018-08-26 00:16:21,391 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select s.id as stuid, s.name as stuname, s.sex as stusex, s.hobby as hobby, s.birthday as stubirth, s.stuno as stuno, s.country as stucountry, c.id as cid, c.cno as cno, c.cname as cname, c.points as points, sc.id scid, sc.score score from student s left join score sc on s.id = sc.sid left join course c on sc.cid = c.id 
+2018-08-26 00:16:21,500 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:16:21,500 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:16:21,558 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2018-08-26 00:16:21,558 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2018-08-26 00:16:35,047 INFO (StudentController.java:30)- --------------查询学生信息-----------
+2018-08-26 00:16:35,047 INFO (StudentController.java:30)- --------------查询学生信息-----------
+2018-08-26 00:16:35,053 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select s.id as stuid, s.name as stuname, s.sex as stusex, s.hobby as hobby, s.birthday as stubirth, s.stuno as stuno, s.country as stucountry, c.id as cid, c.cno as cno, c.cname as cname, c.points as points, sc.id scid, sc.score score from student s left join score sc on s.id = sc.sid left join course c on sc.cid = c.id 
+2018-08-26 00:16:35,053 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select s.id as stuid, s.name as stuname, s.sex as stusex, s.hobby as hobby, s.birthday as stubirth, s.stuno as stuno, s.country as stucountry, c.id as cid, c.cno as cno, c.cname as cname, c.points as points, sc.id scid, sc.score score from student s left join score sc on s.id = sc.sid left join course c on sc.cid = c.id 
+2018-08-26 00:16:35,054 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:16:35,054 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:16:35,070 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2018-08-26 00:16:35,070 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2018-08-26 00:16:39,837 INFO (StudentController.java:30)- --------------查询学生信息-----------
+2018-08-26 00:16:39,837 INFO (StudentController.java:30)- --------------查询学生信息-----------
+2018-08-26 00:29:57,513 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:29:57,513 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:29:57,514 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:29:57,514 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:29:57,690 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:29:57,690 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:29:57,699 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( select * from course ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:29:57,699 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( select * from course ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:29:57,747 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:29:57,747 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:29:57,959 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:29:57,959 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:30:49,482 INFO (AbstractApplicationContext.java:993)- Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1b2cc3b: startup date [Sun Aug 26 00:15:42 CST 2018]; root of context hierarchy
+2018-08-26 00:30:49,491 INFO (MBeanExporter.java:451)- Unregistering JMX-exposed beans on shutdown
+2018-08-26 00:30:49,493 INFO (MBeanRegistrationSupport.java:185)- Unregistering JMX-exposed beans
+2018-08-26 00:30:50,766 INFO (DruidDataSource.java:1825)- {dataSource-1} closed
+2018-08-26 00:30:51,382 INFO (StartupInfoLogger.java:50)- Starting SpringbootApplication on bailixi-PC-1 with PID 8876 (D:\liangzhixing\tool\ideaprojects\springboot\target\classes started by 晨 in D:\liangzhixing\tool\ideaprojects\springboot)
+2018-08-26 00:30:51,382 INFO (StartupInfoLogger.java:50)- Starting SpringbootApplication on bailixi-PC-1 with PID 8876 (D:\liangzhixing\tool\ideaprojects\springboot\target\classes started by 晨 in D:\liangzhixing\tool\ideaprojects\springboot)
+2018-08-26 00:30:51,383 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-08-26 00:30:51,383 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-08-26 00:30:51,384 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-08-26 00:30:51,384 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-08-26 00:30:51,395 INFO (AbstractApplicationContext.java:590)- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10df2a: startup date [Sun Aug 26 00:30:51 CST 2018]; root of context hierarchy
+2018-08-26 00:30:52,953 INFO (RepositoryConfigurationDelegate.java:163)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-08-26 00:30:53,151 INFO (AutowiredAnnotationBeanPostProcessor.java:153)- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-08-26 00:30:53,201 INFO (PostProcessorRegistrationDelegate.java:326)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$401d9778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-26 00:30:53,560 INFO (TomcatWebServer.java:91)- Tomcat initialized with port(s): 28080 (http)
+2018-08-26 00:30:53,563 INFO (DirectJDKLog.java:180)- Initializing ProtocolHandler ["http-nio-28080"]
+2018-08-26 00:30:53,564 INFO (DirectJDKLog.java:180)- Starting service [Tomcat]
+2018-08-26 00:30:53,565 INFO (DirectJDKLog.java:180)- Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-26 00:30:53,737 INFO (DirectJDKLog.java:180)- Initializing Spring embedded WebApplicationContext
+2018-08-26 00:30:53,738 INFO (ServletWebServerApplicationContext.java:285)- Root WebApplicationContext: initialization completed in 2343 ms
+2018-08-26 00:30:53,800 INFO (ServletRegistrationBean.java:187)- Servlet dispatcherServlet mapped to [/]
+2018-08-26 00:30:53,801 INFO (ServletRegistrationBean.java:187)- Servlet statViewServlet mapped to [/druid/*]
+2018-08-26 00:30:53,801 INFO (AbstractFilterRegistrationBean.java:245)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-26 00:30:53,802 INFO (AbstractFilterRegistrationBean.java:245)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-26 00:30:53,802 INFO (AbstractFilterRegistrationBean.java:245)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-26 00:30:53,803 INFO (AbstractFilterRegistrationBean.java:245)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-26 00:30:53,803 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'webStatFilter' to urls: [/*]
+2018-08-26 00:30:53,866 INFO (DruidDataSourceAutoConfigure.java:56)- Init DruidDataSource
+2018-08-26 00:30:54,000 INFO (DruidDataSource.java:930)- {dataSource-2} inited
+2018-08-26 00:30:54,321 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-26 00:30:54,454 INFO (RequestMappingHandlerAdapter.java:574)- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10df2a: startup date [Sun Aug 26 00:30:51 CST 2018]; root of context hierarchy
+2018-08-26 00:30:54,477 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/add]}" onto public com.sc.common.JSONResult com.sc.controller.CourseController.add(javax.servlet.http.Part,com.sc.pojo.Course,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-08-26 00:30:54,477 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/query]}" onto public com.sc.json.CourseDataTableJSON com.sc.controller.CourseController.query(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-08-26 00:30:54,478 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/mod]}" onto public com.sc.common.JSONResult com.sc.controller.CourseController.mod(javax.servlet.http.Part,com.sc.pojo.Course,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-08-26 00:30:54,478 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/detail]}" onto public com.sc.pojo.Course com.sc.controller.CourseController.detail(java.lang.Integer)
+2018-08-26 00:30:54,479 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/del]}" onto public com.sc.common.JSONResult com.sc.controller.CourseController.del(java.lang.Integer[],org.springframework.ui.Model)
+2018-08-26 00:30:54,480 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/toquery]}" onto public java.lang.String com.sc.controller.CourseController.toquery()
+2018-08-26 00:30:54,480 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/checkcno],methods=[POST || GET]}" onto public com.sc.common.JSONResult com.sc.controller.CourseController.checkcno(com.sc.pojo.Course)
+2018-08-26 00:30:54,482 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/]}" onto public java.lang.String com.sc.controller.HomeController.index(org.springframework.ui.Model)
+2018-08-26 00:30:54,482 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/wel]}" onto public java.lang.String com.sc.controller.HomeController.home(org.springframework.ui.Model)
+2018-08-26 00:30:54,487 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/add]}" onto public java.lang.String com.sc.controller.StudentController.add(com.sc.pojo.Student,org.springframework.ui.Model)
+2018-08-26 00:30:54,487 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/query]}" onto public java.lang.String com.sc.controller.StudentController.query(com.sc.pojo.Student,org.springframework.ui.Model)
+2018-08-26 00:30:54,488 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/mod]}" onto public java.lang.String com.sc.controller.StudentController.mod(com.sc.pojo.Student,org.springframework.ui.Model)
+2018-08-26 00:30:54,488 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/detail]}" onto public java.lang.String com.sc.controller.StudentController.detail(java.lang.Integer,org.springframework.ui.Model)
+2018-08-26 00:30:54,489 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/del]}" onto public java.lang.String com.sc.controller.StudentController.del(java.lang.Integer[],org.springframework.ui.Model)
+2018-08-26 00:30:54,489 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/checkstuno],methods=[POST || GET]}" onto public com.sc.common.JSONResult com.sc.controller.StudentController.checkstuno(java.lang.String)
+2018-08-26 00:30:54,490 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/preadd]}" onto public java.lang.String com.sc.controller.StudentController.preadd()
+2018-08-26 00:30:54,490 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/premod]}" onto public java.lang.String com.sc.controller.StudentController.premod(java.lang.Integer,org.springframework.ui.Model)
+2018-08-26 00:30:54,491 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/user/login]}" onto public java.lang.String com.sc.controller.UserController.login(com.sc.pojo.User,org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2018-08-26 00:30:54,492 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/www]}" onto public java.lang.String com.sc.controller.WelcomeController.welcome(java.util.Map<java.lang.String, java.lang.Object>)
+2018-08-26 00:30:54,495 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-26 00:30:54,495 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-26 00:30:54,535 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-26 00:30:54,536 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-26 00:30:54,894 INFO (OptionalLiveReloadServer.java:57)- LiveReload server is running on port 35729
+2018-08-26 00:30:54,959 INFO (MBeanExporter.java:433)- Registering beans for JMX exposure on startup
+2018-08-26 00:30:54,961 INFO (MBeanExporter.java:895)- Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-08-26 00:30:54,961 INFO (MBeanExporter.java:895)- Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-26 00:30:54,967 INFO (MBeanExporter.java:668)- Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-08-26 00:30:54,969 INFO (MBeanExporter.java:668)- Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-08-26 00:30:54,976 INFO (DirectJDKLog.java:180)- Starting ProtocolHandler ["http-nio-28080"]
+2018-08-26 00:30:54,978 INFO (DirectJDKLog.java:180)- Using a shared selector for servlet write/read
+2018-08-26 00:30:54,985 INFO (TomcatWebServer.java:206)- Tomcat started on port(s): 28080 (http) with context path ''
+2018-08-26 00:30:54,986 INFO (StartupInfoLogger.java:59)- Started SpringbootApplication in 3.753 seconds (JVM running for 915.836)
+2018-08-26 00:30:54,986 INFO (StartupInfoLogger.java:59)- Started SpringbootApplication in 3.753 seconds (JVM running for 915.836)
+2018-08-26 00:30:54,991 INFO (ConditionEvaluationDeltaLoggingListener.java:56)- Condition evaluation unchanged
+2018-08-26 00:31:32,693 INFO (DirectJDKLog.java:180)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-26 00:31:32,694 INFO (FrameworkServlet.java:494)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-26 00:31:32,703 INFO (FrameworkServlet.java:509)- FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2018-08-26 00:31:32,900 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:32,900 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:32,901 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:32,901 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:32,905 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:32,905 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:32,928 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by cno asc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:32,928 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by cno asc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:32,929 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:32,929 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:32,980 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:32,980 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:34,133 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:34,133 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:34,137 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:34,137 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:34,140 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:34,140 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:34,143 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by cname asc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:34,143 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by cname asc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:34,144 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:34,144 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:34,192 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:34,192 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:35,154 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:35,154 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:35,156 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:35,156 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:35,158 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:35,158 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:35,161 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by cname desc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:35,161 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by cname desc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:35,162 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:35,162 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:35,227 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:35,227 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:35,993 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:35,993 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:35,994 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:35,994 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:36,008 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:36,008 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:36,010 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by cname asc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:36,010 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by cname asc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:36,011 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:36,011 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:36,014 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:36,014 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:37,033 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:37,033 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:37,035 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:37,035 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:37,040 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:37,040 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:37,043 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by cno asc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:37,043 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by cno asc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:37,044 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:37,044 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:37,049 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:37,049 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:38,347 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:38,347 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:38,349 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:38,349 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:38,351 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:38,351 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:38,356 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by points asc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:38,356 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by points asc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:38,358 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:38,358 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:38,375 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:38,375 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:39,002 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:39,002 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:39,003 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:39,003 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:39,006 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:39,006 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:39,010 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by points desc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:39,010 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by points desc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:39,014 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:39,014 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:39,038 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:39,038 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:39,828 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:39,828 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:39,829 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:39,829 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:39,832 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:39,832 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:39,834 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by cname asc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:39,834 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by cname asc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:39,836 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:39,836 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:39,843 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:39,843 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:40,415 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:40,415 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM course 
+2018-08-26 00:31:40,416 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:40,416 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-08-26 00:31:40,418 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:40,418 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-08-26 00:31:40,422 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by cno asc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:40,422 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT * FROM course order by cno asc ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2018-08-26 00:31:40,424 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:40,424 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 0(Integer)
+2018-08-26 00:31:40,428 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:31:40,428 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-08-26 00:32:18,340 INFO (StartupInfoLogger.java:50)- Starting SpringbootApplication on bailixi-PC-1 with PID 14440 (D:\liangzhixing\tool\ideaprojects\springboot\target\classes started by 晨 in D:\liangzhixing\tool\ideaprojects\springboot)
+2018-08-26 00:32:18,340 INFO (StartupInfoLogger.java:50)- Starting SpringbootApplication on bailixi-PC-1 with PID 14440 (D:\liangzhixing\tool\ideaprojects\springboot\target\classes started by 晨 in D:\liangzhixing\tool\ideaprojects\springboot)
+2018-08-26 00:32:18,342 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-08-26 00:32:18,342 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-08-26 00:32:18,345 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-08-26 00:32:18,345 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-08-26 00:32:18,506 INFO (AbstractApplicationContext.java:590)- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@18780d4: startup date [Sun Aug 26 00:32:18 CST 2018]; root of context hierarchy
+2018-08-26 00:32:23,528 INFO (RepositoryConfigurationDelegate.java:163)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-08-26 00:32:24,957 INFO (AutowiredAnnotationBeanPostProcessor.java:153)- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-08-26 00:32:25,370 INFO (PostProcessorRegistrationDelegate.java:326)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8e6836ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-26 00:32:29,783 INFO (TomcatWebServer.java:91)- Tomcat initialized with port(s): 28080 (http)
+2018-08-26 00:32:29,944 INFO (DirectJDKLog.java:180)- Initializing ProtocolHandler ["http-nio-28080"]
+2018-08-26 00:32:30,034 INFO (DirectJDKLog.java:180)- Starting service [Tomcat]
+2018-08-26 00:32:30,035 INFO (DirectJDKLog.java:180)- Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-26 00:32:30,143 INFO (DirectJDKLog.java:180)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Java\jdk1.8.0_25\bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Lenovo\Lenovo Home\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\Redis\;D:\tool\apache-maven-3.3.9\bin;C:\Ruby25-x64\bin;C:\Users\晨\AppData\Local\Microsoft\WindowsApps;C:\Users\晨\AppData\Roaming\npm;C:\Program Files\nodejs;.]
+2018-08-26 00:32:31,378 INFO (DirectJDKLog.java:180)- Initializing Spring embedded WebApplicationContext
+2018-08-26 00:32:31,379 INFO (ServletWebServerApplicationContext.java:285)- Root WebApplicationContext: initialization completed in 12873 ms
+2018-08-26 00:32:31,996 INFO (ServletRegistrationBean.java:187)- Servlet dispatcherServlet mapped to [/]
+2018-08-26 00:32:31,999 INFO (ServletRegistrationBean.java:187)- Servlet statViewServlet mapped to [/druid/*]
+2018-08-26 00:32:32,007 INFO (AbstractFilterRegistrationBean.java:245)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-26 00:32:32,008 INFO (AbstractFilterRegistrationBean.java:245)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-26 00:32:32,008 INFO (AbstractFilterRegistrationBean.java:245)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-26 00:32:32,008 INFO (AbstractFilterRegistrationBean.java:245)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-26 00:32:32,009 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'webStatFilter' to urls: [/*]
+2018-08-26 00:32:33,859 INFO (DruidDataSourceAutoConfigure.java:56)- Init DruidDataSource
+2018-08-26 00:32:39,089 INFO (DruidDataSource.java:930)- {dataSource-1} inited
+2018-08-26 00:32:44,821 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-26 00:32:45,757 INFO (RequestMappingHandlerAdapter.java:574)- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@18780d4: startup date [Sun Aug 26 00:32:18 CST 2018]; root of context hierarchy
+2018-08-26 00:32:45,991 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/add]}" onto public com.sc.common.JSONResult com.sc.controller.CourseController.add(javax.servlet.http.Part,com.sc.pojo.Course,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-08-26 00:32:45,994 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/query]}" onto public com.sc.json.CourseDataTableJSON com.sc.controller.CourseController.query(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-08-26 00:32:45,996 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/mod]}" onto public com.sc.common.JSONResult com.sc.controller.CourseController.mod(javax.servlet.http.Part,com.sc.pojo.Course,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-08-26 00:32:45,998 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/detail]}" onto public com.sc.pojo.Course com.sc.controller.CourseController.detail(java.lang.Integer)
+2018-08-26 00:32:45,999 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/toquery]}" onto public java.lang.String com.sc.controller.CourseController.toquery()
+2018-08-26 00:32:46,002 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/checkcno],methods=[POST || GET]}" onto public com.sc.common.JSONResult com.sc.controller.CourseController.checkcno(com.sc.pojo.Course)
+2018-08-26 00:32:46,003 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/course/del]}" onto public com.sc.common.JSONResult com.sc.controller.CourseController.del(java.lang.Integer[],org.springframework.ui.Model)
+2018-08-26 00:32:46,012 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/]}" onto public java.lang.String com.sc.controller.HomeController.index(org.springframework.ui.Model)
+2018-08-26 00:32:46,014 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/wel]}" onto public java.lang.String com.sc.controller.HomeController.home(org.springframework.ui.Model)
+2018-08-26 00:32:46,031 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/add]}" onto public java.lang.String com.sc.controller.StudentController.add(com.sc.pojo.Student,org.springframework.ui.Model)
+2018-08-26 00:32:46,032 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/query]}" onto public java.lang.String com.sc.controller.StudentController.query(com.sc.pojo.Student,org.springframework.ui.Model)
+2018-08-26 00:32:46,034 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/mod]}" onto public java.lang.String com.sc.controller.StudentController.mod(com.sc.pojo.Student,org.springframework.ui.Model)
+2018-08-26 00:32:46,035 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/detail]}" onto public java.lang.String com.sc.controller.StudentController.detail(java.lang.Integer,org.springframework.ui.Model)
+2018-08-26 00:32:46,039 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/premod]}" onto public java.lang.String com.sc.controller.StudentController.premod(java.lang.Integer,org.springframework.ui.Model)
+2018-08-26 00:32:46,040 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/preadd]}" onto public java.lang.String com.sc.controller.StudentController.preadd()
+2018-08-26 00:32:46,041 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/del]}" onto public java.lang.String com.sc.controller.StudentController.del(java.lang.Integer[],org.springframework.ui.Model)
+2018-08-26 00:32:46,042 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/student/checkstuno],methods=[POST || GET]}" onto public com.sc.common.JSONResult com.sc.controller.StudentController.checkstuno(java.lang.String)
+2018-08-26 00:32:46,044 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/user/login]}" onto public java.lang.String com.sc.controller.UserController.login(com.sc.pojo.User,org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2018-08-26 00:32:46,046 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/www]}" onto public java.lang.String com.sc.controller.WelcomeController.welcome(java.util.Map<java.lang.String, java.lang.Object>)
+2018-08-26 00:32:46,052 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-26 00:32:46,055 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-26 00:32:46,237 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-26 00:32:46,240 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-26 00:32:51,082 INFO (OptionalLiveReloadServer.java:57)- LiveReload server is running on port 35729
+2018-08-26 00:32:51,222 INFO (MBeanExporter.java:433)- Registering beans for JMX exposure on startup
+2018-08-26 00:32:51,225 INFO (MBeanExporter.java:895)- Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-08-26 00:32:51,226 INFO (MBeanExporter.java:895)- Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-26 00:32:51,275 INFO (MBeanExporter.java:668)- Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-08-26 00:32:51,279 INFO (MBeanExporter.java:668)- Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-08-26 00:32:51,398 INFO (DirectJDKLog.java:180)- Starting ProtocolHandler ["http-nio-28080"]
+2018-08-26 00:32:51,426 INFO (DirectJDKLog.java:180)- Using a shared selector for servlet write/read
+2018-08-26 00:32:51,573 INFO (TomcatWebServer.java:206)- Tomcat started on port(s): 28080 (http) with context path ''
+2018-08-26 00:32:51,613 INFO (StartupInfoLogger.java:59)- Started SpringbootApplication in 35.171 seconds (JVM running for 38.026)
+2018-08-26 00:32:51,613 INFO (StartupInfoLogger.java:59)- Started SpringbootApplication in 35.171 seconds (JVM running for 38.026)

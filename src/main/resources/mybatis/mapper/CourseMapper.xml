@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 复杂查询语句写在这里，其他简单语句可以用注解 -->
+
+<mapper namespace="com.sc.mapper.CourseMapper">
+	<!-- 多表连接查询 -->
+	<select id="selectCourses" resultType="Course">
+	<bind name="%condition%" value="'%' + _parameter + '%'" />
+		select * from course 
+		<where>
+		<if test="_parameter != null and  _parameter != ''">
+		 cno like #{%condition%} or cname like #{%condition%} or points like #{%condition%}
+		</if>
+	</where>
+
+	</select>
+</mapper>

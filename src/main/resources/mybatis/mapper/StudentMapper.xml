@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 复杂查询语句写在这里，其他简单语句可以用注解 -->
+
+<mapper namespace="com.sc.mapper.StudentMapper">
+<!-- 嵌套式结果集 -->
+	<resultMap type="Student" id="stuCouResult">
+		<id property="id" column="stuid" />
+		<result property="stuno" column="stuno" />
+		<result property="name" column="stuname" />
+		<result property="sex" column="stusex" />
+		<result property="birthday" column="stubirth" />
+		<result property="country" column="stucountry" />
+		<!-- javaType="String[]" jdbcType="varchar" -->
+		<result property="hobby" column="hobby" typeHandler="com.sc.common.MyBatisArrayStringTypeHandler"/>
+		<collection property="courses" ofType="Course"
+			javaType="ArrayList">
+			<id property="id" column="cid" />
+			<result property="cno" column="cno" />
+			<result property="cname" column="cname" />
+			<result property="points" column="points" />
+		</collection>
+			<collection property="scores" ofType="Score"
+			javaType="ArrayList">
+			<id property="id" column="scid" />
+			<result property="sid" column="stuid" />
+			<result property="cid" column="cid" />
+			<result property="score" column="score" />
+		</collection>
+	</resultMap>
+
+	<select id="selectCourseScoreBySid" resultType="Course">
+		select c.id,c.cno,c.cname,c.points,sc.sid,sid,sc.score from course c
+		join score sc on c.id = sc.cid where sc.sid = #{id}
+	</select>
+
+	<!-- 多表连接查询 -->
+	<select id="selectAllStudentCourseScore" resultMap="stuCouResult">
+		select
+		s.id as stuid,
+		s.name as stuname,
+		s.sex as stusex,
+		s.hobby as hobby,
+		s.birthday as stubirth,
+		s.stuno as stuno,
+		s.country as stucountry,
+		c.id as cid,
+		c.cno as cno,
+		c.cname as cname,
+		c.points as points,
+		sc.id scid,
+		sc.score score
+		from student s left join score sc
+		on s.id = sc.sid
+		left join course c
+		on sc.cid = c.id
+	</select>
+</mapper>
